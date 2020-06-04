@@ -44,7 +44,7 @@ public class ServiceTest {
         Book book = new Book(4,"呐喊","鲁迅",0);
         Mockito.when(bookMapper.selectByPrimaryKey(4)).thenReturn(book);
         Mockito.when(bookMapper.updateByPrimaryKeySelective(Mockito.any(Book.class))).thenReturn(1);
-        Assert.assertEquals(Result.success(1),recordService.borrowOne(2,4));
+        Assert.assertEquals(new Integer(1),recordService.borrowOne(2,4));
     }
 
     /**

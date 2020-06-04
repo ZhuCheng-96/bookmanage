@@ -24,9 +24,4 @@ public class BookController {
         return Result.success(bookService.selectByKeyword(keyword));
     }
 
-    @GetMapping("/book11")
-    public String exception1() throws Exception{
-        throw new RuntimeException("Exception111");
-
-    }
 }

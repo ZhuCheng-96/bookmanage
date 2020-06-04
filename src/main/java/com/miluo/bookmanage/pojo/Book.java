@@ -7,7 +7,7 @@ public class Book {
 
     private String authorName;
 
-    private Integer status;
+    private Integer status;//0可借 1未归还 2其他异常状态
 
     public Integer getBookId() {
         return bookId;

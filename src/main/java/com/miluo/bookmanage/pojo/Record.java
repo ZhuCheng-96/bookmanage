@@ -13,6 +13,8 @@ public class Record {
 
     private Integer status;
 
+    private Date returnDate;
+
     public Integer getRecordId() {
         return recordId;
     }
@@ -51,5 +53,13 @@ public class Record {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public Date getReturnDate() {
+        return returnDate;
+    }
+
+    public void setReturnDate(Date returnDate) {
+        this.returnDate = returnDate;
     }
 }

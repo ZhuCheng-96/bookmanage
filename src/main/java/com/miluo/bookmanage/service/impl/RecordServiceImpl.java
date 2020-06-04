@@ -20,11 +20,16 @@ public class RecordServiceImpl implements RecordService {
     @Autowired
     private BookMapper bookMapper;
 
+    /**
+     * 借一本书service
+     * @param userId
+     * @param bookId
+     * @return
+     */
     @Override
     @Transactional
-    public Result borrowOne(Integer userId, Integer bookId){
+    public Integer borrowOne(Integer userId, Integer bookId){
         //查询当前用户已借未归还的书籍数量，大于等于5则无法继续借阅
-
         Integer borrowCount = recordMapper.getBookCountByUserId(userId);
         if (borrowCount>=5){
             throw new BusinessException("Over borrowed!");
@@ -52,6 +57,29 @@ public class RecordServiceImpl implements RecordService {
 
         recordMapper.insert(record);
         int result = bookMapper.updateByPrimaryKeySelective(book);
-        return Result.success(result);
+        return 1;
     }
+
+    /**
+     * 还一本书service
+     * @param userId
+     * @param bookId
+     * @return
+     */
+    @Override
+    @Transactional
+    public Integer returnOne(Integer userId, Integer bookId) {
+        Book book = bookMapper.selectByPrimaryKey(bookId);
+        //查询书籍是否存在,是否处于正常可还状态
+        if (book==null){
+            throw new BusinessException("Book not exist!");
+        }
+        if (book.getStatus()!=0){
+            throw new BusinessException("Book not available for borrowing!");
+        }
+
+        return null;
+    }
+
+
 }
