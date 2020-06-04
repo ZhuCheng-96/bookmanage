@@ -7,26 +7,7 @@ public class Book {
 
     private String authorName;
 
-    private Integer status;//0表示可借，1表示不可借
-
-    public Book(Integer bookId, String bookName, String authorName, Integer status) {
-        this.bookId = bookId;
-        this.bookName = bookName;
-        this.authorName = authorName;
-        this.status = status;
-    }
-
-    public Book(){}
-
-    @Override
-    public String toString() {
-        return "Book{" +
-                "bookId=" + bookId +
-                ", bookName='" + bookName + '\'' +
-                ", authorName='" + authorName + '\'' +
-                ", status=" + status +
-                '}';
-    }
+    private Integer status;
 
     public Integer getBookId() {
         return bookId;
@@ -58,5 +39,14 @@ public class Book {
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public Book(Integer bookId, String bookName, String authorName, Integer status) {
+        this.bookId = bookId;
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.status = status;
+    }
+    public Book() {
     }
 }

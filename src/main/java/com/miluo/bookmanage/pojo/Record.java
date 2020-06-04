@@ -2,31 +2,31 @@ package com.miluo.bookmanage.pojo;
 
 import java.util.Date;
 
-public class Borrow {
-    private Integer borrowId;
+public class Record {
+    private Integer recordId;
 
-    private Integer studentId;
+    private Integer userId;
 
     private Integer bookId;
 
     private Date borrowDate;
 
-    private Integer status;//0表示未归还，1表示已归还
+    private Integer status;
 
-    public Integer getBorrowId() {
-        return borrowId;
+    public Integer getRecordId() {
+        return recordId;
     }
 
-    public void setBorrowId(Integer borrowId) {
-        this.borrowId = borrowId;
+    public void setRecordId(Integer recordId) {
+        this.recordId = recordId;
     }
 
-    public Integer getStudentId() {
-        return studentId;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setStudentId(Integer studentId) {
-        this.studentId = studentId;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public Integer getBookId() {

@@ -1,7 +1,5 @@
 package com.miluo.bookmanage;
 
-import com.miluo.bookmanage.service.BookService;
-import com.miluo.bookmanage.service.BorrowService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;

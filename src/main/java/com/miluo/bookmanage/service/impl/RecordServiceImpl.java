@@ -1,22 +1,19 @@
 package com.miluo.bookmanage.service.impl;
 
 import com.miluo.bookmanage.dao.BookMapper;
-import com.miluo.bookmanage.dao.BorrowMapper;
+import com.miluo.bookmanage.dao.RecordMapper;
 import com.miluo.bookmanage.pojo.Book;
-import com.miluo.bookmanage.pojo.Borrow;
-import com.miluo.bookmanage.service.BorrowService;
-import com.miluo.bookmanage.utils.Result;
+import com.miluo.bookmanage.pojo.Record;
+import com.miluo.bookmanage.service.RecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-
 @Service
-public class BorrowServiceImpl implements BorrowService {
+public class RecordServiceImpl implements RecordService {
 
     @Autowired
-    private BorrowMapper borrowMapper;
+    private RecordMapper recordMapper;
 
     @Autowired
     private BookMapper bookMapper;
@@ -26,7 +23,7 @@ public class BorrowServiceImpl implements BorrowService {
     public Integer borrowOne(Integer userId, Integer bookId) {
         //查询当前用户已借未归还的书籍数量，大于等于5则无法继续借阅
 
-        Integer borrowCount = borrowMapper.getBookCountByStudentId(userId);
+        Integer borrowCount = recordMapper.getBookCountByUserId(userId);
         if (borrowCount>=5){
             return 1;
         }
@@ -35,16 +32,16 @@ public class BorrowServiceImpl implements BorrowService {
         if (bookStatus!=0){
             return 2;
         }
-        Borrow borrow = new Borrow();
-        borrow.setStudentId(userId);
-        borrow.setBookId(bookId);
-        borrow.setStatus(0);
+        Record record = new Record();
+        record.setUserId(userId);
+        record.setBookId(bookId);
+        record.setStatus(0);
 
         Book book = new Book();
         book.setBookId(bookId);
         book.setStatus(1);
 
-        borrowMapper.insert(borrow);
+        recordMapper.insert(record);
         return bookMapper.updateByPrimaryKeySelective(book);
     }
 }
