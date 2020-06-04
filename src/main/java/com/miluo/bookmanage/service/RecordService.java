@@ -1,7 +1,7 @@
 package com.miluo.bookmanage.service;
 
-import java.util.List;
+import com.miluo.bookmanage.utils.Result;
 
 public interface RecordService {
-    Integer borrowOne(Integer userId, Integer bookId);
+    Result borrowOne(Integer userId, Integer bookId);
 }

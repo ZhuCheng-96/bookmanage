@@ -26,7 +26,7 @@ public class RecordController {
      * @return
      */
     @PostMapping("/book")
-    public Result borrowOne(@RequestParam("borrow_book_id") String bookId){
+    public Result borrowOne(@RequestParam("borrow_book_id") String bookId) throws Exception{
         Integer bookIdInt = Integer.parseInt(bookId);
         return Result.success(recordService.borrowOne(1,bookIdInt));
     }

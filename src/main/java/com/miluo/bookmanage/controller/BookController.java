@@ -23,4 +23,10 @@ public class BookController {
     public Result selectByKeyword(@RequestParam("keyword") String keyword){
         return Result.success(bookService.selectByKeyword(keyword));
     }
+
+    @GetMapping("/book11")
+    public String exception1() throws Exception{
+        throw new RuntimeException("Exception111");
+
+    }
 }
