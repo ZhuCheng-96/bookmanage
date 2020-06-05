@@ -28,7 +28,5 @@
         </javaClientGenerator>
         <!-- 相关表的配置 -->
         <table tableName="record" domainObjectName="Record" enableCountByExample="false"  enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table tableName="user" domainObjectName="User" enableCountByExample="false"  enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table tableName="book" domainObjectName="Book" enableCountByExample="false"  enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"/>
     </context>
 </generatorConfiguration>

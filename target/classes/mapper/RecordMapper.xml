@@ -7,9 +7,10 @@
     <result column="book_id" jdbcType="INTEGER" property="bookId" />
     <result column="borrow_date" jdbcType="TIMESTAMP" property="borrowDate" />
     <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="return_date" jdbcType="TIMESTAMP" property="returnDate" />
   </resultMap>
   <sql id="Base_Column_List">
-    record_id, user_id, book_id, borrow_date, status
+    record_id, user_id, book_id, borrow_date, status, return_date
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -31,9 +32,11 @@
   </delete>
   <insert id="insert" parameterType="com.miluo.bookmanage.pojo.Record">
     insert into record (record_id, user_id, book_id, 
-      borrow_date, status)
+      borrow_date, status, return_date
+      )
     values (#{recordId,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{bookId,jdbcType=INTEGER}, 
-      #{borrowDate,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER})
+      #{borrowDate,jdbcType=TIMESTAMP}, #{status,jdbcType=INTEGER}, #{returnDate,jdbcType=TIMESTAMP}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.miluo.bookmanage.pojo.Record">
     insert into record
@@ -53,6 +56,9 @@
       <if test="status != null">
         status,
       </if>
+      <if test="returnDate != null">
+        return_date,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="recordId != null">
@@ -69,6 +75,9 @@
       </if>
       <if test="status != null">
         #{status,jdbcType=INTEGER},
+      </if>
+      <if test="returnDate != null">
+        #{returnDate,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
@@ -87,6 +96,9 @@
       <if test="status != null">
         status = #{status,jdbcType=INTEGER},
       </if>
+      <if test="returnDate != null">
+        return_date = #{returnDate,jdbcType=TIMESTAMP},
+      </if>
     </set>
     where record_id = #{recordId,jdbcType=INTEGER}
   </update>
@@ -95,7 +107,8 @@
     set user_id = #{userId,jdbcType=INTEGER},
       book_id = #{bookId,jdbcType=INTEGER},
       borrow_date = #{borrowDate,jdbcType=TIMESTAMP},
-      status = #{status,jdbcType=INTEGER}
+      status = #{status,jdbcType=INTEGER},
+      return_date = #{returnDate,jdbcType=TIMESTAMP}
     where record_id = #{recordId,jdbcType=INTEGER}
   </update>
 </mapper>

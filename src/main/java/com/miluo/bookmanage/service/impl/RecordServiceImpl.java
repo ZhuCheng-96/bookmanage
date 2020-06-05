@@ -68,17 +68,27 @@ public class RecordServiceImpl implements RecordService {
      */
     @Override
     @Transactional
-    public Integer returnOne(Integer userId, Integer bookId) {
+    public Integer returnOne(Integer userId, Integer bookId,Integer recordId) {
         Book book = bookMapper.selectByPrimaryKey(bookId);
         //查询书籍是否存在,是否处于正常可还状态
         if (book==null){
             throw new BusinessException("Book not exist!");
-        }
-        if (book.getStatus()!=0){
-            throw new BusinessException("Book not available for borrowing!");
+        } else if(book.getStatus()!=1){
+            throw new BusinessException("Book status error!");
         }
 
-        return null;
+        //查询记录record，校对数据是否正确
+        Record record = recordMapper.selectByPrimaryKey(recordId);
+        if (record.getUserId()!=userId || record.getBookId()!=bookId
+                || record.getRecordId()!=recordId || record.getStatus()!=1){
+            throw new BusinessException("Record status error!");
+        }
+
+        record.setStatus(0);
+        recordMapper.updateByPrimaryKeySelective(record);
+        book.setStatus(0);
+        bookMapper.updateByPrimaryKeySelective(book);
+        return 1;
     }
 
 

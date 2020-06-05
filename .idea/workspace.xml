@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0abd4a6-6137-4700-8b22-13a5c148ffd7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookmanage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bookmanage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/pojo/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/pojo/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/pojo/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/pojo/Record.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/service/RecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/service/RecordService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/service/impl/RecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/service/impl/RecordServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/utils/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/miluo/bookmanage/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RecordMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-generator-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/miluo/bookmanage/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/miluo/bookmanage/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/controller/RecordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/controller/RecordController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/pojo/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/pojo/Record.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/service/RecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/service/RecordService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/service/impl/RecordServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/service/impl/RecordServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/miluo/bookmanage/utils/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/RecordMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/RecordMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-generator-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/miluo/bookmanage/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/miluo/bookmanage/ServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +43,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -94,7 +91,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Maven.bookmanage []">
+  <component name="RunManager" selected="JUnit.ServiceTest">
     <configuration name="BookmanageApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bookmanage" />
       <extension name="coverage">
@@ -141,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.recordServiceTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.recordServiceTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bookmanage" />
       <extension name="coverage">
         <pattern>
@@ -151,13 +148,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.miluo.bookmanage" />
       <option name="MAIN_CLASS_NAME" value="com.miluo.bookmanage.ServiceTest" />
-      <option name="METHOD_NAME" value="recordServiceTest2" />
+      <option name="METHOD_NAME" value="recordServiceTest5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceTest.recordServiceTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceTest.recordServiceTest6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bookmanage" />
       <extension name="coverage">
         <pattern>
@@ -167,7 +164,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.miluo.bookmanage" />
       <option name="MAIN_CLASS_NAME" value="com.miluo.bookmanage.ServiceTest" />
-      <option name="METHOD_NAME" value="recordServiceTest4" />
+      <option name="METHOD_NAME" value="recordServiceTest6" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -209,19 +206,19 @@
     <list>
       <item itemvalue="Maven.bookmanage []" />
       <item itemvalue="Spring Boot.BookmanageApplication" />
-      <item itemvalue="JUnit.ServiceTest.recordServiceTest2" />
-      <item itemvalue="JUnit.ServiceTest.recordServiceTest4" />
       <item itemvalue="JUnit.ServiceTest" />
       <item itemvalue="JUnit.BookmanageApplicationTests" />
       <item itemvalue="JUnit.ControllerTest.myServiceMethod" />
+      <item itemvalue="JUnit.ServiceTest.recordServiceTest5" />
+      <item itemvalue="JUnit.ServiceTest.recordServiceTest6" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ServiceTest" />
+        <item itemvalue="JUnit.ServiceTest.recordServiceTest5" />
+        <item itemvalue="JUnit.ServiceTest.recordServiceTest6" />
         <item itemvalue="JUnit.ControllerTest.myServiceMethod" />
         <item itemvalue="JUnit.BookmanageApplicationTests" />
-        <item itemvalue="JUnit.ServiceTest.recordServiceTest4" />
-        <item itemvalue="JUnit.ServiceTest.recordServiceTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +248,7 @@
       <workItem from="1591079359014" duration="148000" />
       <workItem from="1591079799096" duration="42844000" />
       <workItem from="1591174928203" duration="270000" />
-      <workItem from="1591175215079" duration="23017000" />
+      <workItem from="1591175215079" duration="27309000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1591175599439</created>
@@ -274,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591251852828</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="4th commit">
+      <created>1591264471787</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591264471787</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +298,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
     <MESSAGE value="3rd commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="3rd commit" />
+    <MESSAGE value="4th commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Notifications" timestamp="1591165048358">
@@ -309,10 +314,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1591178092901" />
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1591259774268">
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1591320843127">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1591259774268" />
+    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1591320843127" />
     <state x="340" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591233171849">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -321,46 +326,46 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1591233383089" />
-    <state x="145" y="0" key="CommitChangelistDialog2" timestamp="1591251852211">
+    <state x="145" y="0" key="CommitChangelistDialog2" timestamp="1591320458123">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="145" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1591251852211" />
+    <state x="145" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1591320458123" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1591174994848">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591174994848" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1591264431108">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1591323121719">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591264431108" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1591264431108">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591323121719" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1591323121719">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591264431108" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1591264431108">
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591323121719" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1591323121719">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591264431108" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1591264431108">
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591323121719" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1591323121719">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591264431108" />
-    <state width="1237" height="175" key="GridCell.Tab.1.bottom" timestamp="1591252847400">
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591323121719" />
+    <state width="1237" height="175" key="GridCell.Tab.1.bottom" timestamp="1591323095878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="175" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591252847400" />
-    <state width="1237" height="175" key="GridCell.Tab.1.center" timestamp="1591252847400">
+    <state width="1237" height="175" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591323095878" />
+    <state width="1237" height="175" key="GridCell.Tab.1.center" timestamp="1591323095878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="175" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1591252847400" />
-    <state width="1237" height="175" key="GridCell.Tab.1.left" timestamp="1591252847400">
+    <state width="1237" height="175" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1591323095878" />
+    <state width="1237" height="175" key="GridCell.Tab.1.left" timestamp="1591323095878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="175" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1591252847400" />
-    <state width="1237" height="175" key="GridCell.Tab.1.right" timestamp="1591252847400">
+    <state width="1237" height="175" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1591323095878" />
+    <state width="1237" height="175" key="GridCell.Tab.1.right" timestamp="1591323095878">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="175" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1591252847400" />
+    <state width="1237" height="175" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1591323095878" />
     <state width="1237" height="175" key="GridCell.Tab.2.bottom" timestamp="1591240823135">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -385,10 +390,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1591175445555" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1591251870001">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1591264480650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1591251870001" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1591264480650" />
     <state x="325" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1591175233320">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -11,7 +11,7 @@ public class Record {
 
     private Date borrowDate;
 
-    private Integer status;
+    private Integer status;//0已还 1已借未还
 
     private Date returnDate;
 
@@ -61,5 +61,15 @@ public class Record {
 
     public void setReturnDate(Date returnDate) {
         this.returnDate = returnDate;
+    }
+
+    public Record(Integer recordId, Integer userId, Integer bookId, Integer status) {
+        this.recordId = recordId;
+        this.userId = userId;
+        this.bookId = bookId;
+        this.status = status;
+    }
+
+    public Record() {
     }
 }

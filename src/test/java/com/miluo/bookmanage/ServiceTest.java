@@ -4,6 +4,7 @@ import com.miluo.bookmanage.dao.BookMapper;
 import com.miluo.bookmanage.dao.RecordMapper;
 import com.miluo.bookmanage.exception.BusinessException;
 import com.miluo.bookmanage.pojo.Book;
+import com.miluo.bookmanage.pojo.Record;
 import com.miluo.bookmanage.service.impl.RecordServiceImpl;
 import com.miluo.bookmanage.utils.Result;
 import org.junit.Assert;
@@ -89,4 +90,23 @@ public class ServiceTest {
         }
     }
 
+    @Test
+    public void recordServiceTest5(){
+        Book book = new Book(3,"朝花夕拾","鲁迅",1);//修改书籍状态，测试失败
+        Record record = new Record(1,1,3,1);//修改任一项，测试失败
+        Mockito.when(bookMapper.selectByPrimaryKey(3)).thenReturn(book);
+        Mockito.when(recordMapper.selectByPrimaryKey(1)).thenReturn(record);
+        int result = recordService.returnOne(1,3,1);
+        Assert.assertEquals(1,result);
+    }
+
+    @Test
+    public void recordServiceTest6(){
+        Book book = new Book(3,"朝花夕拾","鲁迅",1);//修改书籍状态，测试失败
+        Record record = new Record(1,1,3,1);//修改任一项，测试失败
+        Mockito.when(bookMapper.selectByPrimaryKey(3)).thenReturn(book);
+        Mockito.when(recordMapper.selectByPrimaryKey(1)).thenReturn(record);
+        int result = recordService.returnOne(1,3,1);
+        Assert.assertEquals(1,result);
+    }
 }
